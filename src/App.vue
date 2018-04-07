@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    <header>
+    <header class="main-header">
       <span>Vue.js PWA</span>
     </header>
     <main>
@@ -33,11 +33,11 @@ main {
   margin-top: 40px;
 }
 
-header {
+.main-header {
   margin: 0;
   height: 56px;
   padding: 0 16px 0 24px;
-  background-color: #35495E;
+  background-color: var(--primaryColor);
   color: #ffffff;
 }
 

@@ -47,6 +47,6 @@ li {
 }
 
 a {
-  color: #35495E;
+  color: var(--primaryColor);
 }
 </style>
