@@ -1,8 +1,25 @@
-// https://github.com/michael-ciniawsky/postcss-load-config
+'use strict';
+
+const postcssImport = require('postcss-import');
+const cssnano = require('cssnano');
+const cssnext = require('postcss-cssnext');
 
 module.exports = {
-  "plugins": {
-    // to edit target browsers: use "browserlist" field in package.json
-    "autoprefixer": {}
-  }
-}
+  plugins: [
+      postcssImport(),
+      cssnext({
+        features: {
+          autoprefixer: true,
+        },
+      }),
+      cssnano({
+          reduceIdents: {
+              keyframes: false,
+          },
+          discardUnused: {
+              keyframes: false,
+          },
+          autoprefixer: false,
+      }),
+  ],
+};
