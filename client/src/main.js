@@ -6,6 +6,8 @@ import store from './store'
 
 import './css'
 
+import registerServiceWorker from './registerServiceWorker'
+
 Vue.config.productionTip = false
 
 /* eslint-disable no-new */
@@ -15,3 +17,5 @@ new Vue({
   router,
   render: h => h(App),
 })
+
+registerServiceWorker()
