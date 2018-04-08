@@ -3,28 +3,32 @@
     <button class="button" @click="decrement">-</button>
     <span class="count">{{counter}}</span>
     <button class="button" @click="increment">+</button>
+    <button class="button" @click="reset">0</button>
   </div>
 </template>
 
 <script>
+import {mapState} from 'vuex'
+
+import {INCREMENT, DECREMENT, RESET_COUNT} from '@/store/counter'
+
 export default {
-  props: {
-    initialCounter: Number,
-  },
-  data () {
-    return {
-      counter: this.initialCounter || 0,
-    }
-  },
   methods: {
     increment () {
-      this.counter++
+      this.$store.dispatch(INCREMENT)
     },
     decrement () {
-      this.counter--
+      this.$store.dispatch(DECREMENT)
+    },
+    reset () {
+      this.$store.dispatch(RESET_COUNT)
     },
   },
-
+  computed: {
+    ...mapState({
+      counter: state => state.counter.count,
+    }),
+  },
 }
 </script>
 
