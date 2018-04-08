@@ -1,7 +1,9 @@
 <template>
   <div id="app">
     <header class="main-header">
-      <span>Vue.js PWA</span>
+      <router-link to="/" class="main-header__link">
+        Vue.js PWA
+      </router-link>
     </header>
     <main>
       <router-view></router-view>
@@ -15,7 +17,7 @@ export default {
 }
 </script>
 
-<style>
+<style lang="postcss">
 body {
   font-family: 'Avenir', Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
@@ -28,7 +30,10 @@ body {
   height: 56px;
   padding: 0 16px 0 24px;
   background-color: var(--primaryColor);
-  color: #ffffff;
+
+  &__link {
+    color: #ffffff;
+  }
 }
 
 header span {
