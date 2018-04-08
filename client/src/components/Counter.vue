@@ -9,11 +9,11 @@
 <script>
 export default {
   props: {
-    initialCounter: Number
+    initialCounter: Number,
   },
   data () {
     return {
-      counter: this.initialCounter || 0
+      counter: this.initialCounter || 0,
     }
   },
   methods: {
@@ -22,8 +22,8 @@ export default {
     },
     decrement () {
       this.counter--
-    }
-  }
+    },
+  },
 
 }
 </script>

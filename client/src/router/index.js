@@ -11,12 +11,12 @@ export default new Router({
     {
       path: '/',
       name: 'Hello',
-      component: Hello
+      component: Hello,
     },
     {
       path: '/counter',
       name: 'Counter',
-      component: Counter
-    }
-  ]
+      component: Counter,
+    },
+  ],
 })
