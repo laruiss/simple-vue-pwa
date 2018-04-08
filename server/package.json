@@ -1,0 +1,29 @@
+{
+  "name": "simple-vue-pwa-api",
+  "version": "1.0.0",
+  "description": "API for the PWA",
+  "main": "app/index.js",
+  "scripts": {
+    "dev": "nodemon --inspect --watch app app/index.js",
+    "lint": "eslint server/**.*",
+    "start": "node app/index.js",
+    "test": "mocha"
+  },
+  "author": "Stanislas Ormières <stan@stormier.ninja>",
+  "license": "ISC",
+  "devDependencies": {
+    "babel-eslint": "^8.0.0",
+    "eslint": "^4.7.2",
+    "eslint-config-standard": "^10.2.1",
+    "eslint-plugin-import": "^2.7.0",
+    "eslint-plugin-node": "^5.2.0",
+    "eslint-plugin-promise": "^3.5.0",
+    "eslint-plugin-standard": "^3.0.1"
+  },
+  "dependencies": {
+    "awaiting": "^3.0.0",
+    "body-parser": "^1.18.2",
+    "cors": "^2.8.4",
+    "express": "^4.15.5"
+  }
+}
