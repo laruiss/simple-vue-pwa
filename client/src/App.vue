@@ -17,7 +17,7 @@ export default {
 }
 </script>
 
-<style lang="postcss">
+<style lang="scss">
 body {
   font-family: 'Avenir', Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
@@ -27,23 +27,18 @@ body {
 
 .main-header {
   margin: 0;
-  height: 56px;
+  height: 4em;
   padding: 0 16px 0 24px;
   background-color: var(--primaryColor);
 
   &__link {
+    display: inline-block;
+    height: 100%;
     color: #ffffff;
+    font-weight: bold;
+    text-decoration: none;
+    line-height: 4em;
   }
 }
 
-header span {
-  display: block;
-  position: relative;
-  font-size: 20px;
-  line-height: 1;
-  letter-spacing: .02em;
-  font-weight: 400;
-  box-sizing: border-box;
-  padding-top: 16px;
-}
 </style>
