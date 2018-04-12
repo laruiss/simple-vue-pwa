@@ -3,6 +3,10 @@
   "version": "1.0.0",
   "description": "",
   "main": "server/app/index.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/laruiss/simple-vue-pwa.git"
+  },
   "scripts": {
     "start": "run-s start:server",
     "start:server": "cd server ; npm start ; cd ..",
