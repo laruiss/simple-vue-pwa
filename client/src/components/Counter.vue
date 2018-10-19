@@ -8,9 +8,9 @@
 </template>
 
 <script>
-import {mapState} from 'vuex'
+import { mapState } from 'vuex'
 
-import {INCREMENT, DECREMENT, RESET_COUNT} from '@/store/counter'
+import { INCREMENT, DECREMENT, RESET_COUNT } from '@/store/counter'
 
 export default {
   methods: {

@@ -21,13 +21,13 @@ export default {
   },
 
   actions: {
-    async [INCREMENT] ({commit, state}) {
+    async [INCREMENT] ({ commit, state }) {
       commit(INCREMENT)
     },
-    async [DECREMENT] ({commit, state}) {
+    async [DECREMENT] ({ commit, state }) {
       commit(DECREMENT)
     },
-    async [RESET_COUNT] ({commit, state}) {
+    async [RESET_COUNT] ({ commit, state }) {
       commit(RESET_COUNT)
     },
   },
